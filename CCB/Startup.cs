@@ -1,4 +1,5 @@
 using CCB.Data;
+using CCB.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -30,6 +31,17 @@ namespace CCB
             );
 
             services.AddControllersWithViews();
+            //there should be an interface added for proper implementaiton of dependancy injection but as temp class name is used
+            services.AddScoped<ContractorsRepository, ContractorsRepository>();
+
+
+
+
+
+
+
+
+
 
             
 

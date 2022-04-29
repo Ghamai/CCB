@@ -10,7 +10,7 @@ namespace CCB.Data
 
         }
 
-        public DbSet<Contractor> Contractors { get; set; }
-        public DbSet<Renewal> Renewals { get; set; }
+        public DbSet<Contractors> Contractors { get; set; }
+        public DbSet<Renewals> Renewals { get; set; }
     }
 }
